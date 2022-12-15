@@ -12,6 +12,16 @@ export default function LandingPage() {
                     Create an open letter, sign an existing one, or edit an
                     existing one
                 </h1>
+                <h4>
+                    For more information, visit
+                    <a
+                        href="https://github.com/jellyyams/openletter"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        the github repo
+                    </a>
+                </h4>
                 <Stack className="col-md-5 mx-auto" gap={3}>
                     <Button
                         variant="primary"
