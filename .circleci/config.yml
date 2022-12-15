@@ -33,5 +33,4 @@ jobs:
 
       - run: yarn run test:coverage
 
-      - codecov/upload: 
-        file:'./coverage/clover.xml'
+      - codecov/upload: file:'./coverage/clover.xml'
