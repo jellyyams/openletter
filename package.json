@@ -29,6 +29,8 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "test:ci": "CI=true react-scripts test",
+        "test:coverage": "cross-env CI=true npm test -- --env=jsdom --coverage",
+        "upload:test-report": "./node_modules/.bin/codecov",
         "eject": "react-scripts eject",
         "lint": "eslint src --color",
         "prettier": "prettier src -check",
@@ -63,6 +65,7 @@
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.46.1",
         "@typescript-eslint/parser": "^5.46.1",
+        "codecov": "^3.8.3",
         "eslint": "^8.29.0",
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-react": "^7.31.11"
