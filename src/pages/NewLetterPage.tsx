@@ -14,6 +14,7 @@ export default function NewLetterPage() {
     return (
         <Container className={styles.main}>
             <h1>Create a new open letter</h1>
+            <p>This is an edit to test codecov</p>
             <hr></hr>
 
             <Form onSubmit={handleSubmit(onSubmit)}>

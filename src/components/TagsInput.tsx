@@ -5,17 +5,17 @@ import styles from './TagsInput.module.css'
 export default function TagsInput() {
     const [tags, setTags] = useState(['Group 1'])
 
-    const removeTag = (index: any) => {
+    const removeTag = (index: number) => {
         console.log(index)
         setTags(tags.filter((el, i) => i != index))
     }
 
-    const handleKeyDown = (e: any) => {
-        if (e.key !== 'Enter') return
-        const value = e.target.value
+    const handleKeyDown = (event: any) => {
+        if (event.key !== 'Enter') return
+        const value = event.target.value
         if (!value.trim()) return
         setTags([...tags, value])
-        e.target.value = ''
+        event.target.value = ''
     }
 
     return (
