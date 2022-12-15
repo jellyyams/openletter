@@ -1,0 +1,8 @@
+.main {
+    margin: 5em;
+    display: grid;
+    text-align: left;
+    height: 100vh;
+    align-items: center
+
+}

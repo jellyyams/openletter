@@ -1,8 +1,10 @@
 import React from 'react'
 import { Container, Col, Stack, Button } from '../bootstrap'
-import styles from './Pages.module.css'
+import { useNavigate } from 'react-router-dom'
+import styles from './LandingPage.module.css'
 
 export default function LandingPage() {
+    const navigate = useNavigate()
     return (
         <Container className={styles.landingPage}>
             <Col md={8} className="mx-auto">
@@ -11,7 +13,12 @@ export default function LandingPage() {
                     existing one
                 </h1>
                 <Stack className="col-md-5 mx-auto" gap={3}>
-                    <Button variant="primary">Create an Open Letter</Button>
+                    <Button
+                        variant="primary"
+                        onClick={() => navigate('/create')}
+                    >
+                        Create an Open Letter
+                    </Button>
                     <Button variant="outline-primary">
                         Sign an Open Letter
                     </Button>
