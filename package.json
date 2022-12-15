@@ -14,6 +14,7 @@
         "cross-env": "^7.0.3",
         "husky": "^8.0.2",
         "lint-staged": "^13.1.0",
+        "netlify-cli": "^12.2.11",
         "prettier": "2.8.1",
         "react": "^18.2.0",
         "react-bootstrap": "^2.7.0",
@@ -35,7 +36,8 @@
         "eject": "react-scripts eject",
         "lint": "eslint src --color",
         "prettier": "prettier src -check",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "netlify:deploy": "netlify deploy --dir=./build -p -m \"$(git log -1 --pretty=%B)\""
     },
     "lint-staged": {
         "*.{js,ts,tsx}": [
