@@ -8,15 +8,12 @@ export default function NewLetterPage() {
     const { handleSubmit } = useForm()
 
     const onSubmit = () => {
-        console.log('submitted')
+        console.log('submitting')
     }
 
     return (
         <Container className={styles.main}>
             <h1>Create a new open letter</h1>
-            <p>This is an edit to test codecov</p>
-            <hr></hr>
-
             <Form onSubmit={handleSubmit(onSubmit)}>
                 <Stack className="mx-auto" gap={2}>
                     <Row>

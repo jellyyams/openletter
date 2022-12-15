@@ -8,20 +8,24 @@ export default function LandingPage() {
     return (
         <Container className={styles.landingPage}>
             <Col md={8} className="mx-auto">
-                <h1 className={styles.title}>
-                    Create an open letter, sign an existing one, or edit an
-                    existing one
-                </h1>
-                <h4>
-                    For more information, visit
-                    <a
-                        href="https://github.com/jellyyams/openletter"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        the github repo
-                    </a>
-                </h4>
+                <div className={styles.textcontent}>
+                    <h1 className={styles.title}>
+                        Create an open letter, sign an existing one, or edit an
+                        existing one
+                    </h1>
+                    <h4>
+                        For more information, visit the
+                        <a
+                            href="https://github.com/jellyyams/openletter"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {' '}
+                            github repo
+                        </a>
+                    </h4>
+                </div>
+
                 <Stack className="col-md-5 mx-auto" gap={3}>
                     <Button
                         variant="primary"
