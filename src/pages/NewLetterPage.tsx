@@ -50,12 +50,14 @@ export default function NewLetterPage() {
                     <Form.Group className="mb-3" controlId="allowhighlight">
                         <Form.Check
                             type="checkbox"
-                            label="Allow signees to highlight text"
+                            label="Allow signees to highlight text they agree with"
                         />
-                        <Form.Text>
-                            Users can highlight sentences they especially agree
-                            with
-                        </Form.Text>
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="allowhighlight">
+                        <Form.Check
+                            type="checkbox"
+                            label="Allow signees to highlight text they disagree with"
+                        />
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Signee Groups</Form.Label>

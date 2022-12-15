@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import { Form } from '../bootstrap'
 import styles from './TagsInput.module.css'
 
 export default function TagsInput() {
@@ -38,7 +37,6 @@ export default function TagsInput() {
                 className={styles.tagsinput}
                 placeholder="Type here"
             ></input>
-            {/* <Form.Control onKeyDown={handleKeyDown} type="text" className="tags-input" placeholder="Type something" />  */}
         </div>
     )
 }
